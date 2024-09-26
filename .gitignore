@@ -1,0 +1,10 @@
+
+# agda
+
+*.agdai
+
+# lean
+
+.lake
+
+
