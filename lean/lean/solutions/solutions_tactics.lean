@@ -218,7 +218,7 @@ A → ¬ ¬ A (intuitionistic)
 
 example : ¬ ¬ A → A := by
   intro h
-  rw [Not] at h -- at this point we get the byContradicction axiom
+  rw [Not] at h -- at this point we get the byContradiction axiom
   apply byContradiction
   assumption
 
@@ -259,7 +259,7 @@ example : LEM ↔ DNE := by
 /-!
 # Tactics for First Order Logic (and Natural Numbers)
 - rfl: something is equal to itself x = x
-- rw : you can always raplace an x by an y if x = y
+- rw : you can always replace an x by an y if x = y
 - simp: applies rules marked by @simp
 - induction: Principle of induction
 - repeat: repeat the application of a tactic over a resulting goal
@@ -288,7 +288,7 @@ example: (x = y) → (y = z) → (x = z) := by
   rw [h2] at h1
   assumption
 
--- nth rw allows us to use rw in a concrete possition
+-- nth rw allows us to use rw in a concrete position
 example: 2*x + 2 = 2 * (x + 1) := by
   --rw [← Nat.mul_one 2]
   nth_rw 2 [← Nat.mul_one 2]
@@ -349,7 +349,7 @@ lemma add_commutative1 (x y : Nat) : x + y = y + x := by
   | y0 + 1 =>
     repeat rw [Nat.add_succ, add_commutative1 x y0, Nat.succ_add]
 
--- lets play
+-- let's play
 
 def sum_until: Nat → Nat
 | 0 => 0

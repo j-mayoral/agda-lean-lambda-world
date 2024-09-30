@@ -125,7 +125,7 @@ example : LEM ↔ DNE := sorry
 /-!
 # Tactics for First Order Logic (and Natural Numbers)
 - rfl: something is equal to itself x = x
-- rw : you can always raplace an x by an y if x = y
+- rw : you can always replace an x by an y if x = y
 - simp: applies rules marked by @simp
 - induction: Principle of induction
 - repeat: repeat the application of a tactic over a resulting goal
@@ -146,13 +146,13 @@ example: (x = x) := sorry
 -- = is transitive
 example: (x = y) → (y = z) → (x = z) := sorry
 
--- nth rw allows us to use rw in a concrete possition
+-- nth rw allows us to use rw in a concrete position
 example: 2*x + 2 = 2 * (x + 1) := sorry
 
 -- = is symmetric
 example: (x = y) → (y = x) := sorry
 
--- if x = y, then, for any property p, if x stisfies p then y does.
+-- if x = y, then, for any property p, if x satisfies p then y does.
 lemma eq_congr (p : Nat → Prop): x = y → p x = p y := sorry
 
 
@@ -174,7 +174,7 @@ lemma add_commutative0 (x y : Nat) : x + y = y + x := sorry
 -- recursion
 lemma add_commutative1 (x y : Nat) : x + y = y + x := sorry
 
--- lets play
+-- let's play
 
 def sum_until: Nat → Nat := sorry
 

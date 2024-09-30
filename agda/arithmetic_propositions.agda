@@ -10,6 +10,13 @@ private
 
 -- -----
 
+-- There are some Agda commands that may help in interactive proving. These are:
+-- c-C + c-U + c-C + c-, ---> show the goal of the hole having the cursor
+-- c-C + c-C             ---> split by cases with respect to a variable
+-- c-C + c-space         ---> check and fill a hole with the expression provided
+
+-- -----
+
 +-0 : (m : ℕ) → m + zero ≡ m
 +-0 = ?
 
