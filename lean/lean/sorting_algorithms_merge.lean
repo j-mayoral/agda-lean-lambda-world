@@ -67,7 +67,7 @@ lemma splitListLE (xs : List β) :
     case left => assumption
     case right => apply Nat.le_succ_of_le; assumption
 
-theorem splitListLT (xs : List β) (_ : xs.length ≥ 2) :
+lemma splitListLT (xs : List β) (_ : xs.length ≥ 2) :
     (splitList xs).1.length < xs.length ∧
     (splitList xs).2.length < xs.length := by
   match xs with
